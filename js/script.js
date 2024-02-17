@@ -5,8 +5,8 @@ const allDots = document.querySelectorAll(".dot");
 
 let counter = 0;
 
-nextBtn.addEventListener("click", nextSlide);
-function nextSlide() {
+nextBtn.addEventListener("click", next_Slide);
+function next_Slide() {
   images[counter].style.animation = "nextOut 0.5s forwards";
   if (counter >= images.length - 1) {
     counter = 0;
@@ -17,8 +17,8 @@ function nextSlide() {
   pointerDot();
 }
 
-prevBtn.addEventListener("click", prevSlide);
-function prevSlide() {
+prevBtn.addEventListener("click", prev_Slide);
+function prev_Slide() {
   images[counter].style.animation = "prevOut 0.5s forwards";
   if (counter == 0) {
     counter = images.length - 1;
@@ -31,7 +31,7 @@ function prevSlide() {
 
 function autoSliding() {
   deletInterval = setInterval(function () {
-    nextSlide();
+    next_Slide();
     pointerDot();
   }, 5000);
 }
@@ -70,12 +70,4 @@ allDots.forEach(function (dot) {
     }
     pointerDot();
   });
-});
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 6,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
