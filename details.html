@@ -42,6 +42,10 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <span>#129, Street 3, Thvy Cherng Village, Sangkat Andong Khmer, Kampot </span>
         </div>
+        <div class="contacts">
+          <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0969913197" target="_blank"> +855 96 9913 197</a>
+          <i class="fa fa-envelope" aria-hidden="true"></i><a href="http://rankakada10@gmail.com" target="_blank"> rankakada10@gmail.com</a>
+        </div>
     </section>
     <!-- ********* Header Section End ******** -->
     <section class="slider-container">
@@ -146,15 +150,16 @@
         <form action="" method="get">
           <div class="input-data">
             <label for="check_in">Check in</label> <br>
-            <input type="date" name="check_in" id="check_in" required>
+            <input type="text" name="check_in" id="check_in" required onfocus="(this.type='date')" placeholder="Check in Date">
           </div>
           <div class="input-data">
             <label for="check_out">Check out</label> <br>
-            <input type="date" name="check_out" id="check_out" required>
+            <input type="text" name="check_out" id="check_out" required onfocus="(this.type='date')" placeholder="Check out Date">
           </div>
           <div class="input-data">
             <label for="room_type">Room Type</label> <br>
             <select name="room_type" id="room_type" required>
+              <option value="" disabled selected hidden> Select type of rooms</option>
               <option value="1bed">1 Single Bed</option>
               <option value="1bed">2 Single Bed</option>
               <option value="1bed">1 Double Bed</option>
