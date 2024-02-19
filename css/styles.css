@@ -377,15 +377,11 @@ section {
 .bottom .from {
   font-size: 12px;
 }
-hr{
-  /* margin: 5px 0 10px 0; */
-  border: none;
-  border-top: 0px solid #696969;
-  width: 95%;
-}
 .btn-viewDeal {
   cursor: pointer;
-  padding: 0.3rem 1rem;
+  /* padding: 0.3rem 1rem; */
+  width: 6.5rem;
+  height: 2.5rem;
   border-radius: 2px;
   border: none;
   border: 1px solid var(--color-blue);
