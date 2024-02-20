@@ -12,10 +12,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-section {
+/* section {
   width: 85%;
   margin: 0 auto;
-}
+} */
 .about-province{
   position: relative;
 }
@@ -23,6 +23,7 @@ section {
   margin-top: 7rem;
   color: var(--color-blue);
   font-size: 2rem;
+  font-weight: 700;
   /* line-height: 2rem; */
 }
 .heading > span {
@@ -97,4 +98,6 @@ section {
 }
 .properties-type {
   margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }

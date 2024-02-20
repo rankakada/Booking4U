@@ -12,11 +12,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-section {
+/* section {
   width: 85%;
   margin: 0 auto;
-}
-.heading{
+} */
+.heading .container{
     margin-top: 5rem;
 }
 .heading .property-name {
@@ -29,7 +29,7 @@ section {
   text-decoration: none;
   padding-right: 5rem;
 }
-  .slider-container {
+  .slider-container .container{
     position: relative;
     margin-top: 1.5rem;
     height: 70vh;
@@ -88,10 +88,10 @@ section {
   .slider-container .swiper-button-next {
     right: 0.5rem;
   }
-  .details {
+  .details .container{
     position: relative;
     margin-top: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
   }
@@ -101,32 +101,33 @@ section {
   .highlight {
     background-color: rgba(164, 225, 239, 0.4);
     width: 300px;
-    height: 350px;
+    height: 380px;
     padding-top: .5rem;
     padding-left: 1rem;
   }
  #info1,#info2 {
     font-size: 1.2rem;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
  #info1 > p , #info2 > p{
     font-size: 1rem;
     font-weight: 400;
  }
- .booking > h1 {
+ .booking .container > h1 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-blue);
-    margin: 2rem 0;
+    margin-top: 2.5rem;
  }
 form{
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1.5rem 0;
+  gap: 1rem 0;
   font-size: 1.1rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 .input-data {
   width: 48%;
